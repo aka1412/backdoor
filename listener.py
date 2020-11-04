@@ -9,7 +9,7 @@ class Listener:
         listener.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         listener.bind((ip, port))
         listener.listen(0)
-        print("[+] Waisting for incoming connection")
+        print("[+] Waiting for incoming connection")
         self.connection, address = listener.accept()
         print("[+] Connected to "+ str(address))
 
